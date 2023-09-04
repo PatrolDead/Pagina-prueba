@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.radio-container {
+    text-align: center;
+    background-image: url('fondo.jpg');  /* Aquí se utiliza la URL de la imagen de fondo */
+    background-size: cover;  /* Para asegurar que la imagen abarque todo el contenedor */
+    color: white;
+    padding: 20px;
+    backdrop-filter: blur 5px;
+}
+
+#radioImage {
+    width: 70%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+select, button {
+    margin-top: 10px;
+}
+/* Estilo para el elemento select */
+#stationSelect {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Estilo para el botón de reproducción */
+#playButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #27ae60;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    margin-left: 10px; /* Agrega un margen izquierdo para separar el botón del select */
+}
+
+/* Estilo para el botón de detención */
+#stopButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    margin-left: 10px; /* Agrega un margen izquierdo para separar el botón del select */
+}
+/* Estilo para el elemento audio */
+#audioPlayer {
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+    margin-top: 20px; /* Margen superior para separar del resto de los elementos */
+    background-color: #f4f4f4;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+/* Estilo para los controles del reproductor de audio */
+#audioPlayer::-webkit-media-controls {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+/* Estilo para los botones de control de audio */
+#audioPlayer::-webkit-media-controls-play-button,
+#audioPlayer::-webkit-media-controls-pause-button,
+#audioPlayer::-webkit-media-controls-volume-slider {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 0;
+    padding: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Estilo para la barra de progreso del audio */
+#audioPlayer::-webkit-media-controls-progress-bar {
+    background-color: #3498db;
+    height: 8px;
+    border-radius: 5px;
+}
+
+/* Estilo para el tiempo de reproducción y duración del audio */
+#audioPlayer::-webkit-media-controls-time-remaining-display,
+#audioPlayer::-webkit-media-controls-time-display {
+    color: #333;
+    font-size: 14px;
+    margin: 0 5px;
+}
+/* Estilo para la pestaña desplegable */
+.accordion {
+    background-color: #f1f1f1;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Estilo para el encabezado de la pestaña */
+.accordion h2 {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0;
+    border-radius: 5px;
+}
+
+/* Estilo para el contenido de la pestaña */
+.panel {
+    display: none;
+    padding: 10px;
+}
+
+/* Mostrar el contenido de la pestaña cuando está activa */
+.accordion.active .panel {
+    display: block;
+}

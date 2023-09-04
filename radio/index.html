@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Radio Simulada</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="radio-container">
+        <h1>Radio Simulada</h1>
+        <img id="radioImage" src="icono-radio.png">
+        <select id="stationSelect">
+            <option value="94.5">Estación 1 (94.5 MHz)</option>
+            <option value="102.3">Estación 2 (102.3 MHz)</option>
+            <option value="107.9">Estación 3 (107.9 MHz)</option>
+            <option value="109.2">Estación 4 (109.2 MHz)</option> <!-- Cambié el valor duplicado -->
+        </select>
+        <button id="playButton">Reproducir</button>
+        <button id="stopButton">Detener</button>
+        <audio id="audioPlayer" controls>
+            <source src="" type="audio/mp3">
+        </audio>
+        <!-- Pestaña desplegable para información adicional -->
+        <div class="accordion">
+            <h2>Información adicional</h2>
+            <div class="panel">
+                <p style="color: black;">Radio Shelter es un nombre que evoca la idea de refugio y seguridad auditiva, donde los oyentes pueden encontrar un refugio musical reconfortante y disfrutar de las mejores canciones. Esta emisora de radio se presenta como un espacio donde las personas pueden escapar de sus preocupaciones diarias y sumergirse en una experiencia auditiva que les brinda consuelo y entretenimiento a través de una cuidadosa selección de música de alta calidad. En Radio Shelter, la música es el refugio al que los oyentes pueden acudir en busca de tranquilidad y disfrute.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
